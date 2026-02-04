@@ -6,7 +6,6 @@
 userName: BROWSERSTACK_USERNAME
 accessKey: BROWSERSTACK_ACCESS_KEY
 
-
 # ======================
 # Organizing your tests
 # ======================
@@ -19,13 +18,9 @@ accessKey: BROWSERSTACK_ACCESS_KEY
 # executions will be grouped together on BrowserStack
 buildName: Web-Demo-A11y-Assertion
 # Use `projectName` to set the name of your project. Example, Marketing Website
-projectName: Web-Demo-A11y-Assertion
+projectName: E2EWebA11y
 
 buildIdentifier: ${BUILD_NUMBER}
-
-
-
-
 
 # Use `framework` to set the framework of your project. Example, testng, cucumber, cucumber-testng
 framework: testng
@@ -43,10 +38,10 @@ platforms:
 accessibility: true
 accessibilityOptions:
   includeIssueType:
-      bestPractice: false # Default: false
-      needsReview: false # Default: true
-      experimental: false # Default: true
-      advanced: false
+    bestPractice: false # Default: false
+    needsReview: false # Default: true
+    experimental: false # Default: true
+    advanced: false
 #  - deviceName: iPhone 13
 #    osVersion: 15
 #    browserName: Chromium
@@ -78,7 +73,8 @@ parallelsPerPlatform: 5
 # ==========================================
 # Set browserStackLocal to true if your website under test is not accessible publicly over the internet
 # Learn more about how BrowserStack Local works here -> https://www.browserstack.com/docs/automate/selenium/local-testing-introduction
-browserstackLocal: false # <boolean> (Default false)
+browserstackLocal:
+  false # <boolean> (Default false)
   #browserStackLocalOptions:
 # Options to be passed to BrowserStack local in-case of advanced configurations
 #  localIdentifier: # <string> (Default: null) Needed if you need to run multiple instances of local.
